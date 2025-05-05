@@ -17,7 +17,9 @@ if "json_prompt_sent" not in st.session_state:
 
 # UI
 st.set_page_config(page_title="Brief Wizard Chat", page_icon="💬", layout="centered")
-uploaded_file = st.file_uploader("📁 Upload your brief file (TXT or PDF)", type=["txt", "pdf"])
+uploaded_file_company = st.file_uploader("📁 Upload your company PDF)", type=["txt", "pdf"])
+uploaded_file_design = st.file_uploader("📁 Upload your design ", type=["txt", "pdf"])
+
 
 st.title("Brief Wizard powered by Ai")
 st.markdown("Chat until Ai gets everything it needs for your brief.")
