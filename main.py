@@ -17,8 +17,8 @@ if "json_prompt_sent" not in st.session_state:
 
 # UI
 st.set_page_config(page_title="Brief Wizard Chat", page_icon="💬", layout="centered")
-st.title("Gemini Brief Wizard")
-st.markdown("Chat until Gemini gets everything it needs for your JSON brief.")
+st.title("Brief Wizard powered by Ai")
+st.markdown("Chat until Ai gets everything it needs for your brief.")
 
 # Display chat history
 for msg in st.session_state.messages:
