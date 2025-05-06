@@ -3,9 +3,12 @@ import google.generativeai as genai
 from PIL import Image
 import re
 import json
+import os
 
 # 🔐 Configure Gemini
-genai.configure(api_key="AIzaSyBuHM-pPVIiC-hfr0_LXF0vqRqBgL4faBs")  # Replace with your actual API key
+#genai.configure(api_key="AIzaSyBuHM-pPVIiC-hfr0_LXF0vqRqBgL4faBs")  # Replace with your actual API key
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
 model = genai.GenerativeModel("models/gemini-2.0-flash")
 # Initialize chat + message history
 # Init session
