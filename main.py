@@ -24,6 +24,7 @@ st.set_page_config(page_title="Brief Wizard Chat", page_icon="💬", layout="cen
 
 
 
+
 st.title("Brief Wizard powered by Ai")
 st.markdown("Chat until Ai gets everything it needs for your brief.")
 
